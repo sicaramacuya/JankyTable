@@ -15,8 +15,7 @@
 		44331A0E229DFA4B00175B53 /* JankyTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44331A0D229DFA4B00175B53 /* JankyTableTests.swift */; };
 		44331A19229DFA4B00175B53 /* JankyTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44331A18229DFA4B00175B53 /* JankyTableUITests.swift */; };
 		44362F2522A59CA40083E768 /* PhotosDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44362F2422A59CA40083E768 /* PhotosDictionary.plist */; };
-		E9673F2C27BD718900E707B4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9673F2B27BD718900E707B4 /* Protocols.swift */; };
-		E9673F3127BED4CE00E707B4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9673F3027BED4CE00E707B4 /* Photo.swift */; };
+		E9E295C927D18A13007DB838 /* PhotoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E295C827D18A13007DB838 /* PhotoOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +50,7 @@
 		44331A18229DFA4B00175B53 /* JankyTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankyTableUITests.swift; sourceTree = "<group>"; };
 		44331A1A229DFA4B00175B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44362F2422A59CA40083E768 /* PhotosDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PhotosDictionary.plist; sourceTree = "<group>"; };
-		E9673F2B27BD718900E707B4 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		E9673F3027BED4CE00E707B4 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		E9E295C827D18A13007DB838 /* PhotoOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +104,7 @@
 				44331A04229DFA4B00175B53 /* Info.plist */,
 				443319F8229DFA4900175B53 /* AppDelegate.swift */,
 				443319FA229DFA4900175B53 /* TableViewController.swift */,
-				E9673F2D27BED35900E707B4 /* Model */,
-				E9673F2A27BD716900E707B4 /* Network */,
+				E9E295C727D189C8007DB838 /* PhotoManager */,
 				E9673F2E27BED3D300E707B4 /* Storyboards */,
 				E9673F2F27BED42A00E707B4 /* Assets */,
 			);
@@ -132,23 +129,6 @@
 			path = JankyTableUITests;
 			sourceTree = "<group>";
 		};
-		E9673F2A27BD716900E707B4 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				E9673F2B27BD718900E707B4 /* Protocols.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		E9673F2D27BED35900E707B4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				44362F2422A59CA40083E768 /* PhotosDictionary.plist */,
-				E9673F3027BED4CE00E707B4 /* Photo.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E9673F2E27BED3D300E707B4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +144,15 @@
 				443319FF229DFA4B00175B53 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E9E295C727D189C8007DB838 /* PhotoManager */ = {
+			isa = PBXGroup;
+			children = (
+				44362F2422A59CA40083E768 /* PhotosDictionary.plist */,
+				E9E295C827D18A13007DB838 /* PhotoOperations.swift */,
+			);
+			path = PhotoManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,10 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9673F3127BED4CE00E707B4 /* Photo.swift in Sources */,
-				E9673F2C27BD718900E707B4 /* Protocols.swift in Sources */,
 				443319FB229DFA4900175B53 /* TableViewController.swift in Sources */,
 				443319F9229DFA4900175B53 /* AppDelegate.swift in Sources */,
+				E9E295C927D18A13007DB838 /* PhotoOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
